@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : xmpp-webclient : xmpp-webclient.war">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/xmpp-webclient</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="xmpp-webclient.war">
+      <element id="javaee-facet-resources" facet="xmpp-webclient/web/Web Gradle : xmpp-webclient.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xmpp-webclient" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.webjars:jquery:2.1.4" />
+          <element id="library" level="project" name="Gradle: org.webjars:bootstrap:3.2.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/xmpp-webclient/exploded/xmpp-webclient.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

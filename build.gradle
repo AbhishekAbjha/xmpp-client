@@ -1,0 +1,23 @@
+apply plugin: "war"
+apply plugin: "java"
+apply plugin: "jetty"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def version = '1.0.0'
+def jettyVersion = '9.3.9.v20160517'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.webjars', name: 'requirejs', version: '2.3.2'
+    compile group: 'org.webjars', name: 'jquery', version: '2.1.4'
+    compile group: 'org.webjars', name: 'bootstrap', version: '3.2.0'
+}
+
+war{
+    from configurations.compile.collect{ zipTree it }
+}

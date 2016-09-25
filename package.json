@@ -1,0 +1,14 @@
+{
+  "name": "xmpp-webclient",
+  "version": "1.0.0",
+  "description": "open source web client for RTM using bosh supported xmpp servers.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Jha",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
